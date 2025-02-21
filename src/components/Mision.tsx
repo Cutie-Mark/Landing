@@ -7,9 +7,9 @@ const Mision = () => {
             className="flex justify-center bg-[url(/bg-image-2.png)] bg-cover"
         >
             <div className=" h-screen w-4/5 pt-24">
-                <h2 className="font-bold text-5xl text-white pt-24 ">Misión</h2>
+                <h2 className="font-bold text-4xl text-white pt-24 ">Misión</h2>
                 <div className="h-full flex justify-center items-center p-24">
-                    <p className="text-white font-semibold text-2xl text-center">
+                    <p className="text-white font-semibold text-xl text-center">
                         Nuestra misión como empresa es la de proveer soluciones
                         a empresas mediante el uso de la tecnología,
                         centrándonos en desarrollar soluciones innovadoras

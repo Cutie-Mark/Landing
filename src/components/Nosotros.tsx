@@ -6,10 +6,10 @@ const Nosotros = () => {
                     id="nosotros"
                     className="snap-always flex justify-center items-center gap-10 w-4/5"
                 >
-                    <h2 className="text-white text-6xl font-bold w-full">
+                    <h2 className="text-white text-5xl font-bold w-full">
                         ¿Quienes Somos?
                     </h2>
-                    <div className="bg-white rounded-3xl p-10 font-semibold w-full">
+                    <div className="bg-white rounded-xl p-10 font-semibold w-full">
                         <p>
                             Somos una empresa apasionada por la innovación y la
                             tecnología, dedicada a transformar negocios a través
