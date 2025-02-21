@@ -14,6 +14,10 @@ export default {
         darkViolet: "var(--dark-violet)",
         lightViolet: "var(--light-violet)",
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],

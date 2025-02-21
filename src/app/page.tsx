@@ -25,7 +25,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className=" snap-y snap-mandatory font-semibold flex flex-col items-center">
+        <div className=" snap-y snap-mandatory font-semibold flex flex-col items-center font-montserrat">
             <div>
                 <div className="snap-always w-full h-screen flex flex-col justify-between items-center">
                     <div></div>
