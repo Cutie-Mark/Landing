@@ -4,12 +4,18 @@ const Mision = () => {
     return (
         <div
             id="mision"
-            className="flex justify-center bg-[url(/bg-image-2.png)] bg-cover"
+            className="flex justify-center -z-10 relative h-screen overflow-hidden"
         >
-            <div className=" h-screen w-4/5 pt-24">
-                <h2 className="font-bold text-4xl text-white pt-24 ">Misión</h2>
-                <div className="h-full flex justify-center items-center p-24">
-                    <p className="text-white font-semibold text-xl text-center">
+            <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted >
+                <source
+                    src="/Space.mp4"
+                    type="video/mp4"
+                />
+            </video>
+            <div className="absolute h-screen w-4/5 pt-24">
+                <h2 className="font-bold text-4xl text-white text-end pt-24 ">Misión</h2>
+                <div className="h-full  items-center py-24 pl-24">
+                    <p className="text-white font-semibold text-xl text-end">
                         Nuestra misión como empresa es la de proveer soluciones
                         a empresas mediante el uso de la tecnología,
                         centrándonos en desarrollar soluciones innovadoras
