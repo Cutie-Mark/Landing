@@ -5,6 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --white: #ffffff;
+  --dark: #131313;
+  --light-gray: #f1f1f1;
+  --dark-violet: #54319A;
+  --light-violet: #8C52FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,3 +24,5 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bg-\[url\(\)\] {}
