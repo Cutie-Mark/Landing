@@ -27,29 +27,36 @@ export default function Home() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const scrollDown = () => {
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: "smooth",
+        });
+    };
     return (
         <div className=" snap-y snap-mandatory font-semibold flex flex-col items-center font-montserrat">
             <div>
                 <div className="snap-always w-full h-screen flex flex-col justify-between items-center">
                     <div></div>
                     <Logo />
-                    <div>
-                        <Image
-                            src={"/arrow-down.svg"}
-                            alt="arrow-down"
-                            height={50}
-                            width={50}
-                        />
-                    </div>
+
+                    <Image
+                        onClick={scrollDown}
+                        src={"/arrow-down.svg"}
+                        alt="arrow-down"
+                        className="hover:cursor-pointer"
+                        height={50}
+                        width={50}
+                    />
                 </div>
 
                 {isVisible && <Header />}
                 <Nosotros />
                 <Servicios />
                 <Mision />
-                <Vision/>
-                <Valores/>
-                <Footer /> 
+                <Vision />
+                <Valores />
+                <Footer />
             </div>
         </div>
     );
