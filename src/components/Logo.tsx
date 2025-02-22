@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import HeroTitle from "./HeroTitle";
 
 const Logo: React.FC = () => {
   useEffect(() => {
@@ -23,9 +24,9 @@ const Logo: React.FC = () => {
       element.addEventListener("mouseenter", () => {
         gsap.to(element, {
           ease: "power2.out",
-          scale: 1.3, // Aumenta el tamaño al 120% al hacer hover
+          scale: 1.3,
           duration: 0.5,
-          opacity: 0, // Duración de la animación
+          opacity: 0, 
         });
       });
 
@@ -49,15 +50,10 @@ const Logo: React.FC = () => {
         src="/estrella.svg"
         alt="logo estrella"
         width={275}
-        height={106}
+        height={100}
        
       />
-      <div className="flex flex-col ">
-        <h1 className="items-center italic text-9xl mt-8">CUTIE MARK</h1>
-        <h2 className="font-inter text-lightViolet text-4xl font-normal text-center mt-2">
-          Software Solutions
-        </h2>
-      </div>
+      <HeroTitle title="CUTIE MARK" subtitle="Software Solutions" />
     </div>
   );
 };
