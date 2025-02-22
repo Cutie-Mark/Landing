@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import ContactButton from "./ContactButton";
 
 const Servicios = () => {
     return (
@@ -35,9 +36,7 @@ Servicio de Diseño UX/UI para mejorar la experiencia del usuario en plataformas
 Desarrollo de tiendas en línea (e-commerce) con integración de pagos."
                 />
             </div>
-            <button className="bg-gradient-to-r  from-lightViolet to-darkViolet px-6 py-2 text-white rounded-md font-semibold ">
-                Contáctanos
-            </button>
+            <ContactButton handleClick={()=> alert("hola")} />
         </section>
     );
 };

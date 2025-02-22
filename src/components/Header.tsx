@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import MagicLink from "./MagicLink";
+import ContactButton from "./ContactButton";
 const Header = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
 
@@ -12,7 +14,7 @@ const Header = () => {
     };
     return (
         <>
-            <div className="w-full fixed top-0 flex items-center justify-between px-4 bg-white">
+            <div className="w-full fixed top-0 flex items-center justify-between px-4 bg-white border-b-[1px] border-zinc-300">
                 <Link href={"#"}>
                     <Image
                         alt="Logo Cutie Mark"
@@ -24,14 +26,13 @@ const Header = () => {
                 </Link>
 
                 <div className="hidden sm:flex sm:justify-around w-full items-center h-full font-semibold flex-wrap gap-x-3 ">
-                    <Link href={"#nosotros"}>{">"} Sobre nosotros</Link>
-                    <a href={"#servicios"}>{">"} Servicios</a>
-                    <Link href={"#mision"}>{">"} Misión</Link>
-                    <Link href={"#vision"}>{">"} Vision</Link>
-                    <Link href={"#valores"}>{">"} Valores</Link>
-                    <button className="bg-gradient-to-r  from-lightViolet to-darkViolet px-6 py-2 text-white rounded-md font-semibold ">
-                        Contáctanos
-                    </button>
+                    <MagicLink url={"#nosotros"} text="Sobre Nosotros"/>
+                    <MagicLink url={"#servicios"} text="Servicios"/>
+                    <MagicLink url={"#mision"} text="Misión"/>
+                    <MagicLink url={"#vision"} text="Vision"/>
+                    <MagicLink url={"#valores"} text="Valores"/>
+                    <ContactButton handleClick={() => alert("hola")}/>
+                    
                 </div>
                 <button
                     onClick={openMenu}
