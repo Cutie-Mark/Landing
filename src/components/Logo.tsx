@@ -7,24 +7,29 @@ const Logo: React.FC = () => {
     gsap.to("#starImage", {
       duration: 2,
       rotation: 360,
-      filter: "invert(40%) sepia(80%) saturate(500%) hue-rotate(200deg)",
-      ease: "power3.out"
+      filter: "brightness(0) saturate(100%) invert(38%) sepia(67%) saturate(4679%) hue-rotate(243deg) brightness(105%) contrast(103%)",
+      ease: "power3.out",
     });
   }, []);
 
   return (
     <div className="flex items-center">
+      
+        
+
       <Image
         id="starImage"
-        src="/Star.svg"
+        src="/star.svg"
         alt="logo estrella"
-        width={480}
+        width={275}
         height={106}
-        className="-mr-20 -ml-20"
+       
       />
       <div className="flex flex-col ">
         <h1 className="items-center italic text-9xl mt-8">CUTIE MARK</h1>
-        <h2 className="font-inter text-lightViolet text-3xl font-normal text-center mt-2">Software Solutions</h2>
+        <h2 className="font-inter text-lightViolet text-4xl font-normal text-center mt-2">
+          Software Solutions
+        </h2>
       </div>
     </div>
   );
