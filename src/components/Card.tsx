@@ -12,21 +12,21 @@ const Card = ({
 }) => {
     return (
         <div
-            className={` bg-gradient-to-b from-[rgb(28,16,51)] to-[#543199] rounded-3xl p-8  flex flex-col items-center w-full justify-center ${className}`}
+            className={` bg-gradient-to-b from-[rgb(28,16,51)] to-[#543199] rounded-xl sm:rounded-3xl p-3 sm:p-4 md:p-6  flex flex-col items-center w-full justify-center ${className}`}
         >
             {icon && (
-                <div className="p-2">
+                <div className="md:p-2 ">
                     <Image
                         src={icon}
-                        className="object-fill"
+                        className="object-fill w-11 sm:w-14"
                         alt="icon"
                         width={60}
                         height={60}
                     />
                 </div>
             )}
-            <div className="h-full">
-                <p className="text-white mt-5">{text}</p>
+            <div className="h-full flex items-center justify-center">
+                <p className="text-white text-center mt-2 md:mt-5">{text}</p>
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CardPhoto = ({ image, text }: { image?: string; text: string }) => {
     return (
-        <div className="relative w-full rounded-lg h-72 group overflow-hidden">
+        <div className="relative w-full rounded-lg h-44 sm:h-72 group overflow-hidden">
             <div
                 className="absolute inset-0 -z-10 bg-black text-white group-hover:opacity-0 flex items-end justify-end p-3"
                 style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", backgroundPosition: "center" }}

@@ -53,8 +53,9 @@ const Logo: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center gap-2 ">
       <Image
+        className="w-20 sm:w-44"
         src="/estrella.svg"
         alt="logo estrella"
         width={275}

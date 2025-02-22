@@ -5,13 +5,13 @@ const Servicios = () => {
     return (
         <section
             id="servicios"
-            className="flex flex-col items-center p-10 h-screen justify-around pt-24"
+            className="flex flex-col items-center w-4/5 mx-auto h-screen justify-center gap-4 md:gap-20 "
         >
-            <h2 className="text-4xl text-darkViolet font-bold ">
+            <h2 className="text-3xl pt-10 sm:text-4xl text-darkViolet font-bold ">
                 Nuestros servicios
             </h2>
 
-            <div className="flex gap-5 py-10 w-full">
+            <div className="flex flex-col md:flex-row gap-2 md:gap-5 w-full">
                 <Card
                     icon="/cohete.png"
                     text="

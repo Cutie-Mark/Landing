@@ -49,7 +49,7 @@ export default function Home() {
                 <Mision />
                 <Vision/>
                 <Valores/>
-                <Footer />
+                <Footer /> 
             </div>
         </div>
     );

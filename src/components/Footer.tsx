@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <>
             <div className="flex flex-col items-center bg-black">
-                <div className=" text-white py-10 w-4/5 flex">
-                    <div className="w-1/2">
+                <div className=" text-white py-10 w-4/5 flex flex-col sm:flex-row ">
+                    <div className="md:w-2/3">
                         <div className="flex items-center">
                             <h3 className="font-bold text-2xl">Cutie Mark</h3>
                             
@@ -26,7 +26,8 @@ const Footer = () => {
                             seguridad de nuestros productos y servicios.
                         </p>
                     </div>
-                    <div className="w-full flex justify-end items-end">
+
+                    <div className="w-full flex justify-center sm:justify-end items-end">
                         <div className="flex gap-2">
                             <Link
                                 href={

@@ -3,7 +3,7 @@ import CardPhoto from "./CardPhoto";
 
 const Vision = () => {
     return (
-        <div id="vision" className="flex flex-col justify-center items-center h-screen ">
+        <div id="vision" className="flex flex-col justify-center items-center h-screen gap-5 ">
             <div className="flex justify-end  items-center w-4/5 ">
                 <div className="flex items-center gap-2">
                     <Image
@@ -16,7 +16,7 @@ const Vision = () => {
                 </div>
             </div>
 
-            <div className="w-4/5 flex gap-5 pt-20">
+            <div className="w-4/5 flex flex-col sm:flex-row gap-5  sm:pt-20">
                 <CardPhoto
                     image={"/vision-1.png"}
                     text={

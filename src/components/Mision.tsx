@@ -17,18 +17,19 @@ const Mision = () => {
             </video>
             <div className="absolute h-screen w-4/5 pt-40">
                 <div className="flex justify-end  items-center  ">
-                    <div className="  flex justify-end items-center gap-2">
+                    <div className=" flex justify-end items-center gap-2">
                         <Image
                             src={"/cohete.png"}
+                            className="w-10 sm:w-14"
                             alt="icono ojo"
                             width={50}
                             height={50}
                         />
-                        <h2 className="text-4xl text-white">Mision</h2>
+                        <h2 className=" text-2xl sm:text-4xl text-white">Mision</h2>
                     </div>
                 </div>
-                <div className="h-full  items-center py-24 pl-24">
-                    <p className="text-white font-semibold text-xl text-end">
+                <div className="h-full  items-center py-24 sm:pl-24">
+                    <p className="text-white font-semibold sm:text-xl text-end">
                         Nuestra misión como empresa es la de proveer soluciones
                         a empresas mediante el uso de la tecnología,
                         centrándonos en desarrollar soluciones innovadoras

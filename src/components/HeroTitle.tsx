@@ -103,9 +103,9 @@ const HeroTitle: React.FC<HeroTitleProps> = ({ title, subtitle }) => {
   }, []);
   return (
     <div className="flex flex-col">
-      <h1 className="items-center italic text-9xl mt-8 hero-title">{title}</h1>
+      <h1 className="items-center italic text-4xl sm:text-9xl mt-8 hero-title">{title}</h1>
       {subtitle && (
-        <h2 className="font-inter text-lightViolet text-4xl font-normal text-center mt-2 hero-subtitle" ref={divRef}>
+        <h2 className="font-inter text-lightViolet text-xl sm:text-4xl font-normal text-center mt-2 hero-subtitle" ref={divRef}>
           {subtitle}
         </h2>
       )}
