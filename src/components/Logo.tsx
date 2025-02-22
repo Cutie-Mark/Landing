@@ -32,7 +32,7 @@ const Logo: React.FC = () => {
       gsap.timeline().to(element, {
         rotateY: 180,
         ease: "power2.out",
-        scale: 1.1,
+        scale: 1.2,
         duration: 1,
   
         onStart: () => {
@@ -55,7 +55,7 @@ const Logo: React.FC = () => {
   return (
     <div className="flex items-center gap-2 ">
       <Image
-        className="w-20 sm:w-44"
+        className="w-20 sm:w-52"
         src="/estrella.svg"
         alt="logo estrella"
         width={275}

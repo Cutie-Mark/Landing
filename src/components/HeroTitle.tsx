@@ -30,19 +30,19 @@ const HeroTitle: React.FC<HeroTitleProps> = ({ title, subtitle }) => {
         });
         charTl.to(char, {
           color: "rgb(209, 179,255)",
-          duration: 0.4,
-          delay: index * 0.1,
+          duration: 0.3,
+          delay: index * 0.01,
           ease: "linear",
           repeat: -1,
-          repeatDelay: 4,
+          repeatDelay: 3,
         });
         charTl.to(char, {
           color: "rgb(140,83,255)",
-          duration: 0.4,
-          delay: 0.40,
+          duration: 0.3,
+          delay: 0.3,
           ease: "linear",
           repeat: -1,
-          repeatDelay: 4,
+          repeatDelay: 3,
         });
       });
     }
