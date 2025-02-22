@@ -17,6 +17,26 @@ const Logo: React.FC = () => {
       repeat: -1,
       repeatDelay: 2,
     });
+
+    const element = document.querySelector("#starImage");
+    if (element) {
+      element.addEventListener("mouseenter", () => {
+        gsap.to(element, {
+          ease: "power2.out",
+          scale: 1.3, // Aumenta el tamaño al 120% al hacer hover
+          duration: 0.5,
+          opacity: 0, // Duración de la animación
+        });
+      });
+
+      element.addEventListener("mouseleave", () => {
+        gsap.to(element, {
+          scale: 1, // Vuelve al tamaño original
+          duration: 0.3,
+          opacity: 1, // Duración de la animación
+        });
+      });
+    }
   }, []);
 
   return (
