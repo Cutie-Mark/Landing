@@ -18,22 +18,55 @@ const ContactButton: React.FC<ContactButtonProps> = ({ handleClick }) => {
     gsap.set(bgEffect, { scaleX: 0, transformOrigin: "left center" });
     gsap.set(text, { color: "#662ECC" });
 
+    // Animación de latido (palpitación)
     gsap.to(buttonRef.current, {
       scale: 1.1,
-      duration: 0.8,
+      duration: 0.7,
       repeat: -1,
-      yoyo: true,
-      ease: "power.inOut",
+      ease: "sine.out",
+      repeatDelay: 2,
+    });
+
+    gsap.to(buttonRef.current, {
+      scale: 1,
+      duration: 0.7,
+      delay: 0.7,
+      repeat: -1,
+      ease: "sine.out",
+      repeatDelay: 2,
     });
 
     buttonRef.current.addEventListener("mouseenter", () => {
-      gsap.to(bgEffect, { scaleX: 1, duration: 0.4, ease: "power2.out" });
-      gsap.to(text, { color: "#FFFFFF", duration: 0.3, ease: "power2.out" });
+      gsap.to(buttonRef.current, {
+        borderColor: "#ffffff",
+        ease: "power2.out",
+        duration: 0.4,
+      });
+      gsap.to(bgEffect, {
+        scaleX: 1,
+        duration: 0.4,
+        ease: "power2.out",
+        delay: 0.4,
+      });
+      gsap.to(text, {
+        color: "#FFFFFF",
+        duration: 0.3,
+        ease: "power2.out",
+        delay: 0.4,
+      });
     });
 
     buttonRef.current.addEventListener("mouseleave", () => {
       gsap.to(bgEffect, { scaleX: 0, duration: 0.4, ease: "power2.out" });
-      gsap.to(text, { color: "#662ECC", duration: 0.3, ease: "power2.out" });
+      gsap.to(text, {
+        color: "#662ECC",
+        duration: 0.3,
+        ease: "power2.out",
+      });
+      gsap.to(buttonRef.current, {
+        borderColor: "#662ECC",
+        duration: 0.4,
+      });
     });
   }, []);
 
@@ -41,12 +74,13 @@ const ContactButton: React.FC<ContactButtonProps> = ({ handleClick }) => {
     <button
       ref={buttonRef}
       onClick={handleClick}
-      className="relative overflow-hidden px-6 py-2 rounded-full border-4 border-white font-bold transition-colors duration-300"
+      className="relative overflow-hidden px-6 py-2 rounded-3xl border-4  border-darkViolet font-bold"
     >
-      <span className="effect absolute left-0 top-0 w-full h-full bg-gradient-to-r from-darkViolet to-lightViolet rounded-full"></span>
+      {/* Fondo con degradado animado */}
+      <span className="effect absolute left-0 top-0 w-full h-full bg-gradient-to-r from-darkViolet to-lightViolet rounded-3xl"></span>
 
-  
-      <span className="text relative z-10 text-darkViolet underline underline-offset-4">Contáctanos</span>
+      {/* Texto */}
+      <span className="text relative z-10 text-darkViolet">Contáctanos</span>
     </button>
   );
 };
