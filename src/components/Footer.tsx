@@ -10,6 +10,7 @@ const Footer = () => {
                     <div className="w-1/2">
                         <div className="flex items-center">
                             <h3 className="font-bold text-2xl">Cutie Mark</h3>
+                            
                             <Image
                                 src={"/Cutie Mark Estrella.png"}
                                 alt="logo estrella"

@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Logo from "@/components/Logo";
 import Mision from "@/components/Mision";
 import Nosotros from "@/components/Nosotros";
 import Servicios from "@/components/Servicios";
@@ -29,13 +30,7 @@ export default function Home() {
             <div>
                 <div className="snap-always w-full h-screen flex flex-col justify-between items-center">
                     <div></div>
-                    <Image
-                        alt="Logo Cutie Mark"
-                        src={"/cutieLogo.png"}
-                        className="object-contain"
-                        width={800}
-                        height={100}
-                    />
+                    <Logo />
                     <div>
                         <Image
                             src={"/arrow-down.svg"}
