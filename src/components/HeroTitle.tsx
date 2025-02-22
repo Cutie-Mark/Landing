@@ -77,7 +77,7 @@ const HeroTitle: React.FC<HeroTitleProps> = ({ title, subtitle }) => {
           gsap
             .timeline()
             .to(char, {
-              y: gsap.utils.random(-100, -50),
+              y: -70,
               ease: "power2.out",
               color: `rgb(${gsap.utils.random(0, 255)},${gsap.utils.random(
                 0,
