@@ -6,9 +6,16 @@ const Logo: React.FC = () => {
   useEffect(() => {
     gsap.to("#starImage", {
       duration: 2,
-      rotation: 360,
       filter: "brightness(0) saturate(100%) invert(38%) sepia(67%) saturate(4679%) hue-rotate(243deg) brightness(105%) contrast(103%)",
       ease: "power3.out",
+    });
+
+    gsap.to("#starImage", {
+      rotate: 360,
+      duration: 2,
+      ease: "power2.out",
+      repeat: -1,
+      repeatDelay: 2,
     });
   }, []);
 
