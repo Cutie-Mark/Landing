@@ -26,7 +26,7 @@ const Logo: React.FC = () => {
 
       <Image
         id="starImage"
-        src="/star.svg"
+        src="/estrella.svg"
         alt="logo estrella"
         width={275}
         height={106}
