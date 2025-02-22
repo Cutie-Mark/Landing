@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Mision from "@/components/Mision";
 import Nosotros from "@/components/Nosotros";
 import Servicios from "@/components/Servicios";
+import Valores from "@/components/Valores";
+import Vision from "@/components/Vision";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -50,6 +52,8 @@ export default function Home() {
                 <Nosotros />
                 <Servicios />
                 <Mision />
+                <Vision/>
+                <Valores/>
                 <Footer />
             </div>
         </div>
