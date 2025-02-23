@@ -6,7 +6,7 @@ const Servicios = () => {
     return (
         <section
             id="servicios"
-            className="flex flex-col items-center w-4/5 mx-auto h-screen justify-center gap-4 md:gap-20 "
+            className="flex flex-col items-center w-4/5 mx-auto h-screen justify-center gap-4 md:gap-20 mb-4 "
         >
             <h2 className="text-3xl pt-10 sm:text-4xl font-bold ">
                 Nuestros servicios

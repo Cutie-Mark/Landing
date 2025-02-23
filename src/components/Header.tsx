@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import MagicLink from "./MagicLink";
 import ContactButton from "./ContactButton";
 import Hamburger from "./Hamburger";
+import gsap from "gsap";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const header = useRef(null);
 
   const openMenu = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -14,9 +16,28 @@ const Header = () => {
   const closeMenu = () => {
     setIsOpenMenu(false);
   };
+
+  useEffect(() => {
+     gsap.fromTo(
+       header.current,
+       {y: -50 },
+       {
+         opacity: 1,
+         y: 0,
+         duration: 1,
+         ease: "power2.out",
+         scrollTrigger: {
+           trigger: "#nosotros",
+           start: "top 10%",
+           toggleActions: "play none none reverse",
+         },
+       }
+     );
+  }, []);
+
   return (
     <>
-      <div className="w-full fixed top-0 flex items-center justify-between px-4 bg-white border-b-[1px] border-zinc-300 z-50">
+      <div className="w-full fixed top-0 flex items-center justify-between px-4 bg-white border-b-[1px] border-zinc-300 z-50 opacity-0" ref={header}>
         <Link href={"#"}>
           <Image
             alt="Logo Cutie Mark"

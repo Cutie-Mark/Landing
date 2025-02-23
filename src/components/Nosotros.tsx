@@ -25,9 +25,8 @@ const Nosotros = () => {
         scrollTrigger: {
           trigger: boxRef.current,
           start: "top 70%",
-          end: "bottom 30%",
+          end: "top 20%",
           toggleActions: "play reverse play reverse",
-
         },
       }
     );
@@ -45,8 +44,8 @@ const Nosotros = () => {
         duration: 0.5,
         scrollTrigger: {
           trigger: boxRef.current,
-          start: "top 70%",
-          end: "botton 30%",
+          start: "top 60%",
+          end: "bottom 10%",
           toggleActions: "play reverse play reverse",
         },
       }
@@ -58,11 +57,11 @@ const Nosotros = () => {
       {
         opacity: 1,
         duration: 0.5,
-        markers: true,
+
         scrollTrigger: {
           trigger: boxRef.current,
-          start: "top 70%",
-          end: "bottom 30%",
+          start: "top 60%",
+          end: "bottom 10%",
           toggleActions: "play reverse play reverse",
         },
       }
