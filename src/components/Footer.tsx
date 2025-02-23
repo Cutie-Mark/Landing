@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center font-normal bg-black text-sm p-6 space-y-4">
           <p className="w-full text-zinc-200 text-center">
-            Echo con ❤ por Cutie Mark,
+            Hecho con ❤ por Cutie Mark,
           </p>
           <p className="w-full text-zinc-200 text-center">
             Inc. © 2025. Todos los derechos Reservados.
