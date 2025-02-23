@@ -8,7 +8,7 @@ const Servicios = () => {
             id="servicios"
             className="flex flex-col items-center w-4/5 mx-auto h-screen justify-center gap-4 md:gap-20 "
         >
-            <h2 className="text-3xl pt-10 sm:text-4xl text-darkViolet font-bold ">
+            <h2 className="text-3xl pt-10 sm:text-4xl font-bold ">
                 Nuestros servicios
             </h2>
 

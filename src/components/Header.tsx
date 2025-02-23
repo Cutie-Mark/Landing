@@ -16,7 +16,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className="w-full fixed top-0 flex items-center justify-between px-4 bg-white border-b-[1px] border-zinc-300">
+      <div className="w-full fixed top-0 flex items-center justify-between px-4 bg-white border-b-[1px] border-zinc-300 z-50">
         <Link href={"#"}>
           <Image
             alt="Logo Cutie Mark"
@@ -40,7 +40,7 @@ const Header = () => {
         } />
       </div>
       {isOpenMenu && (
-        <div className="fixed top-20 left-0 w-full bg-gradient-to-b from-darkViolet to-lightViolet flex flex-col items-center justify-center font-semibold p-4 gap-3 text-white">
+        <div className="fixed top-20 left-0 w-full bg-gradient-to-b from-darkViolet to-lightViolet flex flex-col items-center justify-center font-semibold p-4 gap-3 text-white z-50">
           <Link onClick={closeMenu} href={"#nosotros"}>
             {">"} Sobre nosotros
           </Link>
