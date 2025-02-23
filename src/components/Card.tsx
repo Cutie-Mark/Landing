@@ -12,7 +12,7 @@ const Card = ({
 }) => {
     return (
       <div
-        className={` bg-gradient-to-b from-[#8C52FF] to-[#662ECC] rounded-xl sm:rounded-3xl p-3 sm:p-4 md:p-6  flex flex-col items-center w-full justify-center ${className}`}
+        className={` bg-gradient-to-b from-[#8C52FF] to-[#662ECC] rounded-xl sm:rounded-3xl p-3 sm:p-4 md:p-6  flex flex-col items-center w-full justify-center ${className} min-h-40`}
       >
         {icon && (
           <div className="md:p-2 ">

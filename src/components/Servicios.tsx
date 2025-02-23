@@ -6,9 +6,9 @@ const Servicios = () => {
     return (
         <section
             id="servicios"
-            className="flex flex-col items-center w-4/5 mx-auto h-screen justify-center gap-4 md:gap-20 mb-4 "
+            className="flex flex-col items-center w-4/5 h-auto min-h-screen mx-auto  justify-center gap-4 md:gap-20 mb-4 "
         >
-            <h2 className="text-3xl pt-10 sm:text-4xl font-bold ">
+            <h2 className="text-3xl pt-24 sm:text-4xl font-bold p-4 ">
                 Nuestros servicios
             </h2>
 

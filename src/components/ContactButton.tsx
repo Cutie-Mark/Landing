@@ -67,7 +67,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({ handleClick }) => {
     <button
       ref={buttonRef}
       onClick={handleClick}
-      className="relative overflow-hidden px-6 py-2 rounded-3xl border-4  border-darkViolet font-bold"
+      className="relative overflow-hidden px-6 py-2 rounded-3xl border-4  border-darkViolet font-boldb min-h-[50px]"
     >
       {/* Fondo con degradado animado */}
       <span className="effect absolute left-0 top-0 w-full h-full bg-gradient-to-r from-darkViolet to-lightViolet"></span>
