@@ -118,7 +118,7 @@ const Nosotros = () => {
           </div>
         </div>
       </div>
-      <div className="h-5"></div>
+      <div className="h-4"></div>
     </div>
   );
 };
