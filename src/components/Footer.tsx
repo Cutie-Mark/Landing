@@ -27,7 +27,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="w-full flex justify-center sm:justify-end items-end">
+            <div className="w-full flex justify-center sm:justify-end items-end pt-4">
               <div className="flex gap-4">
                 <Link
                   href={

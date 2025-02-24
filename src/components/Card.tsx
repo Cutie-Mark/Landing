@@ -18,7 +18,21 @@ const Card = ({
   useEffect(() => {
     const card = cardRef.current;
     if (!card) return;
-
+    gsap.fromTo(card, {
+      y: -50,
+      opacity: 0,
+    }, { 
+      y: 0,
+      opacity: 1,
+      ease: "back.inOut",
+      duration: 1,
+      scrollTrigger: {
+        trigger: card,
+        start: "top 80%",
+        end: "top 10%",
+        toggleActions: "play reverse play reverse"
+      }
+    })
     const tl = gsap.timeline({ paused: true });
 
     tl.to(card, {

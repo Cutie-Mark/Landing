@@ -6,9 +6,9 @@ const Valores = () => {
     return (
         <div
             id="valores"
-            className=" flex flex-col items-center justify-center h-screen bg-[url(/bg-image-3.png)] object-cover gap-20 "
+            className=" flex flex-col items-center justify-center h-screen bg-[url(/bg-image-3.png)] object-cover gap-20"
         >
-            <div className="flex items-center w-4/5">
+            <div className="flex items-center w-4/5 pt-14">
                 <h2 className="text-2xl text-white">Valores</h2>
                 <Image
                     src={"/mano.png"}
@@ -18,7 +18,7 @@ const Valores = () => {
                 />
             </div>
 
-            <div className=" w-4/5 items-center flex flex-col sm:flex-row gap-2 sm:gap-5  ">
+            <div className=" w-4/5 items-center flex flex-col sm:flex-row gap-4 sm:gap-5  ">
                 <Card
                     className={
                         "from-black to-black py-5 sm:py-10 text-xl sm:text-2xl font-normal h-full "
